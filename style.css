@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background: #f4c4f3;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient( -45deg, #fffcdc, #fa8072, #f4c4f3);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient( -45deg, #fffcdc, #fa8072, #f4c4f3);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: 150%;
+}
+
+.container-fluid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.parent {
+	background: linear-gradient( -45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2));
+	width: 80vw;
+	height: 90vh;
+	display: flex;
+	border-radius: 1.5rem;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.parent::-webkit-scrollbar {
+	display: none;
+}
+
+.child {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-weight: 500;
+}
+
+.One {
+	background: linear-gradient( to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3));
+	border-top-left-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+	font-size: x-large;
+	height: 90vh;
+	position: fixed;
+	width: 20%;
+}
+
+.Two {
+	padding: 1.5rem;
+	font-size: x-large;
+	margin-left: 25%;
+}
+
+#me {
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	margin-top: 1.5rem;
+}
+
+.domain {
+	font-size: x-large;
+	padding-bottom: 0.4rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	font-weight: 600;
+}
+
+#icon {
+	width: 6rem;
+	height: 6rem;
+}
+
+#skill-text {
+	text-decoration: none;
+	color: rgb(1, 1, 39);
+	font-weight: 600;
+}
+
+#links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 4rem;
+	width: 100%;
+}
+
+.move {
+	background: linear-gradient( -45deg, rgba(250, 207, 241, 0.2), rgba(253, 200, 216, 0.5));
+	text-align: center;
+	margin: 0.3rem;
+	border-radius: 1.5rem;
+}
+
+.move:hover {
+	background: transparent;
+	border: 1px solid #fa8072;
+	animation: animate 0.5s ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		margin-bottom: 0rem;
+		margin-top: 0rem;
+		transform: scale(1);
+		border-radius: 1.5rem;
+	}
+	100% {
+		margin-bottom: 0.5rem;
+		margin-top: 0.5rem;
+		transform: scale(1.1);
+		border-radius: 0.75rem;
+	}
+}
+
+.move a {
+	color: rgb(1, 1, 39);
+	text-decoration: none;
+	font-size: large;
+	font-weight: 600;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	letter-spacing: 1px;
+}
+
+.move a:hover {
+	color: salmon;
+	text-decoration: none;
+}
+
+#likes li {
+	font-size: 20px;
+}
+
+#education {
+	border-radius: 2rem;
+}
+
+#background-wrap {
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@-moz-keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@keyframes animateBubble {
+	0% {
+		margin-top: 1000px;
+	}
+	100% {
+		margin-top: -100%;
+	}
+}
+
+@-webkit-keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 50px;
+	}
+}
+
+@-moz-keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 50px;
+	}
+}
+
+@keyframes sideWays {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left: 50px;
+	}
+}
+
+
+/* ANIMATIONS */
+
+.x1 {
+	-webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: -5%;
+	top: 5%;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+	-webkit-animation: animateBubble 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 5%;
+	top: 80%;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+	-webkit-animation: animateBubble 23s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 23s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 23s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 10%;
+	top: 40%;
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+	-webkit-animation: animateBubble 17s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 17s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 17s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 20%;
+	top: 0;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+	-webkit-animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 30%;
+	top: 50%;
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+	-webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 50%;
+	top: 0;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+	-webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 65%;
+	top: 70%;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+	-webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 80%;
+	top: 10%;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+	-webkit-animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 90%;
+	top: 50%;
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+	-webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 80%;
+	top: 80%;
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+
+/* OBJECTS */
+
+.bubble {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+	background: -moz-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+	/* FF3.6+ */
+	background: -webkit-gradient( radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
+	/* Chrome,Safari4+ */
+	background: -webkit-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+	/* Opera 12+ */
+	background: -ms-radial-gradient( center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+	/* IE10+ */
+	background: radial-gradient( ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	content: "";
+	height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+
+.info {
+	font-size: 20px;
+}
+
+.icon-bar {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	z-index: 10;
+}
+
+.icon-bar a {
+	text-decoration: none;
+	width: 9rem;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0.45rem;
+	font-size: 1.25rem;
+	transform: translateX(-6.6rem);
+	-webkit-transform: translateX(-6.6rem);
+	-ms-transform: translateX(-6.6rem);
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	border-top-right-radius: 1.5rem;
+	border-bottom-right-radius: 1.5rem;
+}
+
+.facebook {
+	background: #3b5998;
+}
+
+.twitter {
+	background: #00aced;
+}
+
+.instagram {
+	background: #e1306c;
+}
+
+.git {
+	background: orangered;
+}
+
+.linkedin {
+	background: #0077b5;
+}
+
+.icon-bar a i {
+	padding-left: 1.25rem;
+	font-size: 1.875rem !important;
+	animation: letszoom 2s linear alternate infinite;
+}
+
+@keyframes letszoom {
+	from {
+		transform: scale(0.85);
+	}
+	to {
+		transform: scale(0.95);
+	}
+}
+
+.icon-bar a:hover {
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	text-decoration: none;
+	color: #000;
+}
