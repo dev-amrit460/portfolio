@@ -149,7 +149,7 @@ body {
 }
 
 #education {
-	border-radius: 2rem;
+	border-radius: 1rem;
 }
 
 #background-wrap {
@@ -448,7 +448,8 @@ body {
 	color: #000;
 }
 #hey {
-	text-align: center;
+	width: 100%;
+	text-align: left;
   }
   #hey h1{
 	color:#0a1d46;
