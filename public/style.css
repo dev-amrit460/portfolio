@@ -69,6 +69,8 @@ body {
 	height: 8.5vw;
 	border-radius: 50%;
 	margin-top: 1.6vw;
+	border: 2px solid #fa8072;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .domain {
